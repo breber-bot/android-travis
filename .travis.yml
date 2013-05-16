@@ -6,3 +6,6 @@ before_install:
   - export ANDROID_HOME=$(pwd)/android-sdk-linux
   - export PATH=${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${PATH}
   - echo "y" | android update sdk --filter platform-tools,android-17 --no-ui --force
+
+script:
+  - ./gradlew assemble --debug
