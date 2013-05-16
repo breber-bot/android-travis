@@ -1,6 +1,6 @@
 language: java
 
-script: "./gradlew assemble --stacktrace --debug"
+script: ./gradlew assemble --stacktrace --debug
 
 before_install:
   - wget http://dl.google.com/android/android-sdk_r21-linux.tgz
