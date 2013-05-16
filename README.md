@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/breber-bot/android-travis.png)](https://travis-ci.org/breber-bot/android-travis)
