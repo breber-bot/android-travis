@@ -10,5 +10,8 @@ before_install:
   - echo "y" | android update sdk --filter platform-tools,android-17 --no-ui --force
 
 script:
+  - ls -l
+  - pwd
+  - export ANDROID_HOME=$(pwd)/android-sdk-linux
   - cd TravisTest
   - ./gradlew assemble --debug
