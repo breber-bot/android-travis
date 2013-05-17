@@ -14,4 +14,4 @@ script:
   - pwd
   - export ANDROID_HOME=$(pwd)/android-sdk-linux
   - cd TravisTest
-  - ./gradlew assemble --debug
+  - ./gradlew assemble
