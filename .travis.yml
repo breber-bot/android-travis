@@ -1,4 +1,6 @@
 language: java
+jdk:
+  - openjdk7
 
 before_install:
   - wget http://dl.google.com/android/android-sdk_r22-linux.tgz
@@ -8,4 +10,5 @@ before_install:
   - echo "y" | android update sdk --filter platform-tools,android-17 --no-ui --force
 
 script:
+  - cd TravisTest
   - ./gradlew assemble --debug
