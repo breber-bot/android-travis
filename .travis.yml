@@ -11,7 +11,7 @@ before_install:
   - echo "y" | android update sdk --filter platform-tools,build-tools,android-17 --no-ui --force
   - wget https://dl-ssl.google.com/android/repository/build-tools_r17-linux.zip
   - unzip build-tools_r17-linux.zip
-  - mv -R android-4.2.2/* android-sdk-linux/build-tools/17.0.0
+  - mv -r android-4.2.2/* android-sdk-linux/build-tools/17.0.0
 
 script:
   - export ANDROID_HOME=$(pwd)/android-sdk-linux
