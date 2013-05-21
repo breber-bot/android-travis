@@ -13,6 +13,8 @@ before_install:
   - mv android-4.2.2 $ANDROID_HOME/build-tools/17.0.0
   - chmod -R 777 $ANDROID_HOME/build-tools
   - cd $ANDROID_HOME/build-tools/17.0.0
+  - chmod 777 *
+  - ls -l
   - ./aapt
 
 script:
