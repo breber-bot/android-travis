@@ -14,6 +14,10 @@ before_install:
   - ls -l $ANDROID_HOME
   - ls -l $ANDROID_HOME/build-tools
   - ls -l $ANDROID_HOME/build-tools/17.0.0
+  - cd $ANDROID_HOME/build-tools/17.0.0
+  - pwd
+  - ls -l
+  - ./aapt
 
 script:
   - export ANDROID_HOME=$(pwd)/android-sdk-linux
