@@ -3,16 +3,8 @@ jdk:
   - openjdk7
 
 before_install:
-  - wget http://dl.google.com/android/android-sdk_r22-linux.tgz
-  - tar -zxf android-sdk_r22-linux.tgz
-  - export ANDROID_HOME=$(pwd)/android-sdk-linux
-  - export PATH=${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${PATH}
-  - echo "y" | android update sdk --filter platform-tools,build-tools,android-17 --no-ui --force
-  - wget https://dl-ssl.google.com/android/repository/build-tools_r17-linux.zip
-  - unzip build-tools_r17-linux.zip
-  - mv android-4.2.2 $ANDROID_HOME/build-tools/17.0.0
-  - cd $ANDROID_HOME/build-tools/17.0.0
-  - $(pwd)/aapt
+  - wget https://dl.dropboxusercontent.com/u/2202216/android-sdk-linux.zip
+  - unzip android-sdk-linux.zip
 
 script:
   - export ANDROID_HOME=$(pwd)/android-sdk-linux
