@@ -8,11 +8,8 @@ before_install:
   - if [ `uname -m` = x86_64 ]; then sudo apt-get install -qq --force-yes libgd2-xpm ia32-libs ia32-libs-multiarch; fi
   - wget https://dl.dropboxusercontent.com/u/2202216/android-sdk-linux.zip
   - unzip android-sdk-linux.zip
-  - ls -la android-sdk-linux
-  - ls -la android-sdk-linux/build-tools/17.0.0/
 
 script:
   - export ANDROID_HOME=$(pwd)/android-sdk-linux
   - cd TravisTest
-  - ./gradlew --version
   - ./gradlew assemble
